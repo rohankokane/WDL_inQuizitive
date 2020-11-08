@@ -1,0 +1,341 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
+/* @import url('') */
+/* 
+@font-face{
+    font-family: 'gilroy';
+    src: url('assets/fonts/Gilroy-ExtraBold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: URL('assets/fonts/Roboto-Regular.ttf') format('truetype');
+} */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* html{
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+} */
+
+/* body{
+    overflow-x: hidden;
+    background-color: #fbfbfb;
+} */
+
+.active{
+    color: #f13c54 !important;
+}
+
+/* Blur on POP up */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+.bars{
+    display: block;
+    width: 25px;
+    z-index: 100;
+}
+.cross{
+    display: none;
+    width: 25px;
+    z-index: 100;
+}
+.phone{
+    display: none;
+}
+/* .main{
+    overflow-x: hidden;
+} */
+
+/* ####### nav ######### */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 29px 0px 16px; */
+    /* position: relative; */
+    position: fixed;
+    background-color: #fbfbfb;
+    width: 100vw;
+    top:0;
+    z-index: 50;
+    /* transition: ease-in-out .5s; */
+}
+
+.site-heading{
+    padding: 0;
+    margin: 0;
+}
+
+.heroLogo{
+    width:50px;
+    margin-left: 35px;
+}
+
+.menuToggle{
+    display: block;
+    /* width: 2.5rem; */
+    z-index: 100;
+    position: fixed;
+    padding: 10px;
+    /* top:70%; */
+    /* transform: translateY(-50%); */
+    right:3rem;
+    cursor:pointer;
+    z-index:1500;
+}
+
+.open .cross{
+    display: block;
+}
+
+.open .bars{
+    display: none;
+}
+#phoneicon{
+    width: 1rem;
+}
+.navList{
+    list-style: none;
+    position:fixed;
+    top:0;
+    left:0;
+    /* width: 100vw; */
+    height:100%;
+    background-color: #ffffff;
+    margin:0 auto;
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s, visibility .3s;
+    transition: opacity .3s, visibility .3s;
+    z-index: 50;
+}
+
+.navItems{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    top:20%;
+    height: 18rem;
+    margin: 5rem 1.5rem;
+    letter-spacing: 0.24px;
+    font-size: 1.5rem;
+    /* font-family: Roboto; */
+    font-weight: 400;
+    color: #212121;
+}
+
+.navItems li a:hover{
+    color:#f13c54;
+}
+.navItems li a:active{
+    color:#f13c54;
+}
+
+.open .navList {
+  visibility: visible;
+  opacity: 1;
+}
+.navFlower{
+    position: absolute;
+    right: 0;
+    top:45%;
+}
+.navIllus{
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+}
+/* nav End */
+
+
+@media screen and (max-width: 340px){
+    .navItems{
+        top:20%;
+        height: 18rem;
+        margin: 5rem 1.5rem;
+        letter-spacing: 0.24px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:500px){
+    .Illustration {
+        position: absolute;
+        object-fit: cover;
+        /* float: left; */
+        left: -18vw;
+        top: 15%;
+        width: 43%;
+        object-position: -20% 0;
+    }
+    .navFlower {
+        position: absolute;
+        right: 0;
+        top: 45%;
+        width: 13rem;
+    }
+    .navItems {
+        width: max-content;
+        margin: 50% auto;
+        transform: translateY(-50%);
+        height: 500px;
+        font-size: 2.5rem;
+        margin-left: 15%;
+    }
+    #phoneicon{
+        width: 2rem;
+    }
+}
+
+@media screen and (min-width:700px){
+    .navFlower {
+        position: absolute;
+        right: 0;
+        top: 45%;
+        width: 13rem;
+    }
+    .navItems {
+        width: max-content;
+        margin: 50% auto;
+        transform: translateY(-50%);
+        height: 500px;
+        font-size: 2.5rem;
+        margin-left: 15%;
+    }
+    #phoneicon{
+        width: 2rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+       
+    /* nav */
+    #phoneicon{
+        width: 1rem;
+    }
+    .bars{
+        display: none;
+        width: 0px;
+        z-index: -100;
+    }
+    .cross{
+        display: none;
+        width: 0px;
+        z-index: -100;
+    }
+    .phone{
+        display: block;
+    }
+    .main{
+        position: relative;
+        /* display: block; */
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+        /* padding: 10px 0px 0px; */
+        padding-left: 3%;
+        padding-right: 3%;
+        /* position: unset; */
+        position: fixed;
+        background-color: #ffffff;
+        /* background-image: linear-gradient(white, #ffe6f0); */
+        width: initial;
+        width: 100%;
+        /* max-width: 1140px; */
+        /* position: relative; */
+        z-index: 50;
+    }
+    .heroLogo{
+        width:80px;
+        
+    }
+    .menuToggle{
+        display: none;
+        width: 0rem;
+        z-index: -100;
+        position: initial;
+        /* top:70%; */
+        /* transform: translateY(-50%); */
+        right:initial;
+        cursor:initial;
+        z-index:initial;
+    }
+    nav.navList{
+        list-style: none;
+        position:relative;
+        /* top:-.5rem; */
+        right:0;
+        width: initial;
+        height:initial;
+        background-color: #ffffff;
+        margin:0 2.5rem 0 0;
+        overflow: hidden;
+        /* width: 100%; */
+        /* background-color: #ffffff; */
+        visibility: initial;
+        opacity: 1;
+        -webkit-transition: initial;
+        transition: initial;
+        z-index: 50;
+        display: block;
+        padding: initial;
+        /* justify-content: flex-start; */
+        width: 40rem;
+    }
+    .navItems{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        top:50%;
+        transform: initial;
+        width: initial;
+        height: initial;
+        font-size: 14px;
+        /* font-family: Roboto; */
+        /* font-weight: 400; */
+        /* color: var(--body-font-color); */
+    }
+    .navFlower{
+        position: absolute;
+        display: none;
+        width: 0;
+    }
+    .navIllus{
+        position: absolute;
+        display: none;
+        width: 0;
+    }
+    /* nav End */
+}
+    

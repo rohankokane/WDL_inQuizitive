@@ -1,0 +1,333 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@font-face{
+    font-family: 'gilroy';
+    src: url('../assets/fonts/Gilroy-ExtraBold.otf') format('truetype');
+}
+/* @font-face {
+    font-family: 'Roboto';
+    src: URL('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  } */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #fbfbfb;
+}
+
+
+a{    
+    text-decoration: none;
+    color: #212121;
+}
+.navItems a:hover{
+    color: #cc33ff;
+}
+a:active{
+    color: #cc33ff;
+}
+/* Blur on POP up */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5rem;
+    font-family: 'Inter', sans-serif;
+    /* padding: 7%; */
+}
+
+.section{
+    padding: 2% 7% ;
+}
+.section:nth-child(even){
+    background-color: #f9e6ff;
+}
+
+#home{
+    /* width: 100vw; */
+    height: 100%;
+    height: calc(100vh - 5rem);
+    position: relative;
+    /* margin: 0 auto 3%; */
+}
+
+.hero-banner{
+    width: 100%;
+}
+
+#home .main-button{
+    color: #2a2a2a !important;
+    /* background: #ffffff;
+        background-color: rgb(255, 255, 255); */
+    /* border-width: 12px !important; */
+    letter-spacing: 2px;
+    font-size: 14px;
+    /* font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif !important; */
+    /* font-weight: 600 !important; */
+    text-transform: uppercase !important;
+    background-color: #ffffff;
+    padding: 0.72em 1em;
+    border: 2px solid;
+    border-color: #ffffff;
+
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    transform: translateX(-50%);
+}
+#home .main-button:hover{
+    box-shadow: 0px 0px 10px 2px #f8e4ffab;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+.heading-center{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.content{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.content-center{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.content-div{
+    width: 50vw;
+}
+.content-div:nth-child(even){
+    padding-left: 5%;
+}
+.content-div:nth-child(odd){
+    padding-right: 5%;
+}
+.text-img{
+    display: flex;
+    flex-direction: row;
+}
+.text-img img{
+    width: 40vw;
+    height: 20vw;
+}
+
+/*Contact /us*/
+div .card{
+    position: relative;
+    background-color:#e4d4e9;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #979797;
+    padding: 15px 10px;
+}
+.form-group{
+    width: 30vw;
+    height: 32vw; 
+    padding: 10px;
+}
+.head{
+    font-family: 'Gilroy';
+    text-align: center;
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+}
+input:focus, textarea:focus{
+    outline:none;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    width: 100%;
+    border-radius: 12px;
+    background-color: #eeeeee;
+    font: var(--body-font);
+    color: #000000;
+    border: 0px;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+}
+textarea{
+    height: 15rem;
+}
+label{
+    font-family: 'Gilroy';
+    font-weight: 200;
+    color: #212121;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    margin: 0 0.5rem 0.5rem;
+}
+.ao-label{
+    margin-top: 0.5rem;
+}
+#submit{
+    float: left;
+    clear: both;
+    font-family: var(--body-font);
+    cursor: pointer;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    margin: 2% 0;
+    background-color: #5e0d5e;
+    padding: 2% 5% 2% 5%;
+    border-width: 0px;
+    width: 30%;
+    border-radius: 10px;
+}
+#submit:hover{
+background-color: #5e0d5e;
+}
+
+/* FLOAT BUTTON */
+
+a.button {
+    display: block;
+    position: relative;
+    float: left;
+    width: 120px;
+    padding: 0;
+    margin: 10px 20px 10px 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all 0.2s ;
+  }
+.btnPurple.btnBorder {
+    box-shadow: 0px 0px 0px 0px #5e0d5e;
+  }
+  
+  .btnPurple.btnBorder:hover {
+    box-shadow: 0px 0px 0px 5px #5e0d5e;
+  }
+  .btnPurple {
+    background: #5e0d5e;
+  }  
+.btnFloat {
+    background: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btnFloat:before {
+    content: 'Attempt Quiz';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.2s ;
+  }
+
+  .btnPurple.btnFloat:before {
+    background: #5e0d5e;
+  }
+  
+  
+  .btnFloat:before {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .btnFloat:hover:before {
+    margin-top: -2px;
+    margin-left: 0px;
+    transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* carousel */
+  .fling-minislide {
+    width: 50vw;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.fling-minislide figure { 
+    position:absolute;
+    animation:fling-minislide 20s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fling-minislide { 25% { opacity:1; } 40%{ opacity: 0; } } 
+.fling-minislide figure:nth-child(4){ animation-delay: 0s; }
+.fling-minislide figure:nth-child(3){ animation-delay: 5s; }
+.fling-minislide figure:nth-child(2){ animation-delay: 10s; }
+.fling-minislide figure:nth-child(1){ animation-delay: 15s; }
+
+figure img {
+    height: 300px;
+    overflow: hidden;
+    Width: auto;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    height: 100px;
+    font-family: 'Gilroy';
+    position: absolute;
+    top: 320px; /* height of the image */
+    /* text-align: center; */
+    left:0; 
+}
+.section-form{
+    padding: 5% 0;
+    margin: 0 auto;
+}
+
+/* quiz form */
+.age-org{
+    display: flex;
+}
+#org{
+    width: 160%;
+    margin-right: 3%;
+}
+.submit-btn{
+    margin: 5% auto !important;
+}
